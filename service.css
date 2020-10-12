@@ -1,0 +1,32 @@
+/* INTRODUCTION */
+.intro{
+    background-image: url('../img/intro-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f1f1f1;
+}
+
+.intro h2{
+    font-size: 350%;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.intro p{
+    font-size: 150%;
+    font-style: italic;
+}
+
+
+/*  */
+.content{
+    
+}
+.content>div{
+    
+}
+.content p{
+    margin: 0;
+}
+
+@media 

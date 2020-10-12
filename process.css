@@ -1,0 +1,195 @@
+/* INTRODUCTION */
+.intro {
+    color: white;
+}
+
+.intro h2 {
+    font-size: 250%;
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #006633;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.5px;
+}
+
+.timeline .t-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline .t-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid #006633;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline .left {
+    left: 0;
+}
+
+.timeline .right {
+    left: 50%;
+}
+
+.timeline .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+    right: 18px;
+    border: medium solid #fff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.timeline .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+    left: 18px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.timeline .right::after {
+    left: -13px;
+}
+
+.timeline .content {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline img {
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.timeline .text {
+    padding: 10px 20px;
+}
+
+.timeline .text h3{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+    font-size: 120%;
+    color: #006633;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+    .timeline {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline::after {
+        left: 27px;
+    }
+
+    .timeline .t-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline .t-container::before {
+        left: 45px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .timeline .left::after,
+    .timeline .right::after {
+        left: 0;
+    }
+
+    .timeline .right {
+        left: 0%;
+    }
+}
+
+/* CALL */
+.call {
+    background: url('../img/meeting.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.call>div {
+    height: 100%;
+    background: rgba(0, 102, 51, 0.81);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.call .call-content {
+    height: 100%;
+    color: white;
+    line-height: 1.5;
+}
+
+.call-content h2 {
+    font-weight: 600;
+    color: #00eb50;
+    margin-bottom: 30px;
+}
+
+.call-content span {
+    color: white;
+}
+
+.call-button {
+    padding: 30px 0;
+}
+
+.work-with-us {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: #006633;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.36);
+}
