@@ -11,8 +11,6 @@ function height(){
     }
 };
 
-
-
 $(window).scroll(function(){
     $('.navbar').toggleClass('scrolled', $(this).scrollTop() >= x/2);
 	$('.action-button').toggleClass('btn-scrolled', $(this).scrollTop() >= x/2);
